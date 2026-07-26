@@ -216,7 +216,7 @@ const Login = () => {
               className="text-cyan-400 cursor-pointer hover:underline"
               onClick={() => navigate("/")}
             >
-              Register
+              Dashboard
             </span>
           </p>
         </form>
