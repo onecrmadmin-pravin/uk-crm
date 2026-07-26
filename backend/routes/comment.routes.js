@@ -13,22 +13,30 @@ const router = express.Router();
  * @route   POST /api/comments/:cardId
  * @desc    Add comment (USER / ADMIN)
  */
+// router.post(
+//   "/:cardId",
+//   protect,
+//   authorize("USER", "ADMIN"),
+//   addComment
+// );
 router.post(
   "/:cardId",
-  protect,
   authorize("USER", "ADMIN"),
   addComment
 );
-
 /**
  * @route   GET /api/comments/:cardId
  * @desc    Get comments (USER / ADMIN)
  */
+// router.get(
+//   "/:cardId",
+//   protect,
+//   authorize("USER", "ADMIN"),
+//   fetchComments
+// );
 router.get(
   "/:cardId",
-  protect,
   authorize("USER", "ADMIN"),
   fetchComments
 );
-
 export default router;

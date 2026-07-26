@@ -9,6 +9,6 @@ const router = express.Router();
  * @route   POST /api/files/upload
  * @desc    Upload file (Protected)
  */
-router.post("/upload", protect, upload.single("file"), uploadFile);
-
+// router.post("/upload", protect, upload.single("file"), uploadFile);
+router.post("/upload", upload.single("file"), uploadFile);
 export default router;

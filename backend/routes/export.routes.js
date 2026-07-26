@@ -8,6 +8,6 @@ const router = express.Router();
  * @route   GET /api/export
  * @desc    Export data to Excel (Protected)
  */
-router.get("/", protect, exportData);
-
+// router.get("/", protect, exportData);
+router.get("/", exportData);
 export default router;

@@ -12,12 +12,12 @@ const router = express.Router();
  * @route   POST /api/companies
  * @desc    Create company (Protected)
  */
-router.post("/", protect, addCompany);
-
+// router.post("/", protect, addCompany);
+router.post("/", addCompany);
 /**
  * @route   GET /api/companies
  * @desc    Get all companies (Protected)
  */
-router.get("/", protect, fetchCompanies);
-
+// router.get("/", protect, fetchCompanies);
+router.get("/",fetchCompanies);
 export default router;

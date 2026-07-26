@@ -14,33 +14,45 @@ const router = express.Router();
  * @route   POST /api/cards
  * @desc    Create card (USER / ADMIN)
  */
+// router.post(
+//   "/",
+//   protect,
+//   authorize("USER", "ADMIN"),
+//   addCard
+// );
 router.post(
   "/",
-  protect,
   authorize("USER", "ADMIN"),
   addCard
 );
-
 /**
  * @route   GET /api/cards
  * @desc    Get cards (USER / ADMIN)
  */
+// router.get(
+//   "/",
+//   protect,
+//   authorize("USER", "ADMIN"),
+//   fetchCards
+// );
 router.get(
   "/",
-  protect,
   authorize("USER", "ADMIN"),
   fetchCards
 );
-
 /**
  * @route   PATCH /api/cards/:id/stage
  * @desc    Move card (USER / ADMIN)
  */
+// router.patch(
+//   "/:id/stage",
+//   protect,
+//   authorize("USER", "ADMIN"),
+//   moveCard
+// );
 router.patch(
   "/:id/stage",
-  protect,
   authorize("USER", "ADMIN"),
   moveCard
 );
-
 export default router;

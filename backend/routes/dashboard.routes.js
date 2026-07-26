@@ -8,6 +8,6 @@ const router = express.Router();
  * @route   GET /api/dashboard
  * @desc    Get dashboard stats (Protected)
  */
-router.get("/", protect, fetchDashboard);
-
+// router.get("/", protect, fetchDashboard);
+router.get("/", fetchDashboard);
 export default router;

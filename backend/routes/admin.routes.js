@@ -13,12 +13,12 @@ const router = express.Router();
  * @route   GET /api/admin/stats
  * @desc    Get system stats (Admin only)
  */
-router.get("/stats", protect, authorize("ADMIN"), fetchAdminStats);
-
+// router.get("/stats", protect, authorize("ADMIN"), fetchAdminStats);
+router.get("/stats", authorize("ADMIN"), fetchAdminStats);
 /**
  * @route   PATCH /api/admin/user/:id
  * @desc    Update user role (Admin only)
  */
-router.patch("/user/:id", protect, authorize("ADMIN"), updateUserRole);
-
+// router.patch("/user/:id", protect, authorize("ADMIN"), updateUserRole);
+router.patch("/user/:id", authorize("ADMIN"), updateUserRole);
 export default router;

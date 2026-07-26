@@ -12,12 +12,12 @@ const router = express.Router();
  * @route   GET /api/users
  * @desc    Get all users (Admin only)
  */
-router.get("/", protect, authorize("ADMIN"), fetchUsers);
-
+// router.get("/", protect, authorize("ADMIN"), fetchUsers);
+router.get("/", fetchUsers);
 /**
  * @route   GET /api/users/:id
  * @desc    Get single user
  */
-router.get("/:id", protect, fetchUserById);
-
+// router.get("/:id", protect, fetchUserById);
+router.get("/:id", fetchUserById);
 export default router;

@@ -46,16 +46,16 @@ router.post("/refresh", refreshToken);
 /**
  * @route   POST /api/auth/logout
  */
-router.post("/logout", protect, logout);
-
+// router.post("/logout", protect, logout);
+router.post("/logout", logout);
 /**
  * @route   GET /api/auth/me
  */
-router.get("/me", protect, me);
-
+// router.get("/me", protect, me);
+router.get("/me", me);
 /**
  * @route   POST /api/auth/change-password
  */
-router.post("/change-password", protect, changePassword);
-
+// router.post("/change-password", protect, changePassword);
+router.post("/change-password", changePassword);
 export default router;

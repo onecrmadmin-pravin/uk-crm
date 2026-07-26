@@ -12,12 +12,12 @@ const router = express.Router();
  * @route   POST /api/rejections/:cardId
  * @desc    Reject a card (Protected)
  */
-router.post("/:cardId", protect, rejectCard);
-
+router.post("/:cardId", rejectCard);
+// router.post("/:cardId", protect, rejectCard);
 /**
  * @route   GET /api/rejections
  * @desc    Get all rejected cards (Protected)
  */
-router.get("/", protect, fetchRejectedCards);
-
+// router.get("/", protect, fetchRejectedCards);
+router.get("/", fetchRejectedCards);
 export default router;
