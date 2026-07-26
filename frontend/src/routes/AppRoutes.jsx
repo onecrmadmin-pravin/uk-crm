@@ -38,90 +38,100 @@ const AppRoutes = () => {
       <Route
         path="/"
         element={
-          <ProtectedRoute>
-            <Dashboard />
-          </ProtectedRoute>
+          <Dashboard />
+          // <ProtectedRoute>
+          //   <Dashboard />
+          // </ProtectedRoute>
         }
       />
 
       <Route
         path="/board"
         element={
-          <ProtectedRoute>
-            <Board />
-          </ProtectedRoute>
+          <Board />
+          // <ProtectedRoute>
+          //   <Board />
+          // </ProtectedRoute>
         }
       />
 
       <Route
         path="/card/:id"
         element={
-          <ProtectedRoute>
-            <CardDetails />
-          </ProtectedRoute>
+          <CardDetails />
+          // <ProtectedRoute>
+          //   <CardDetails />
+          // </ProtectedRoute>
         }
       />
 
       <Route
         path="/users"
         element={
-          <ProtectedRoute>
-            <Users />
-          </ProtectedRoute>
+          <Users />
+          // <ProtectedRoute>
+          //   <Users />
+          // </ProtectedRoute>
         }
       />
 
       <Route
         path="/admin"
         element={
-          <ProtectedRoute>
-            <AdminPanel />
-          </ProtectedRoute>
+          <AdminPanel />
+          // <ProtectedRoute>
+          //   <AdminPanel />
+          // </ProtectedRoute>
         }
       />
 
       <Route
         path="/companies"
         element={
-          <ProtectedRoute>
-            <Company />
-          </ProtectedRoute>
+          <Company />
+          // <ProtectedRoute>
+          //   <Company />
+          // </ProtectedRoute>
         }
       />
 
       <Route
         path="/stages"
         element={
-          <ProtectedRoute>
-            <Stage />
-          </ProtectedRoute>
+          <Stage />
+          // <ProtectedRoute>
+          //   <Stage />
+          // </ProtectedRoute>
         }
       />
 
       <Route
         path="/files"
         element={
-          <ProtectedRoute>
-            <FileManager />
-          </ProtectedRoute>
+          <FileManager />
+          // <ProtectedRoute>
+          //   <FileManager />
+          // </ProtectedRoute>
         }
       />
 
       <Route
         path="/rejections"
         element={
-          <ProtectedRoute>
-            <Rejected />
-          </ProtectedRoute>
+          <Rejected />
+          // <ProtectedRoute>
+          //   <Rejected />
+          // </ProtectedRoute>
         }
       />
 
       <Route
         path="/import-export"
         element={
-          <ProtectedRoute>
-            <ImportExport />
-          </ProtectedRoute>
+          <ImportExport />
+          // <ProtectedRoute>
+          //   <ImportExport />
+          // </ProtectedRoute>
         }
       />
     </Routes>
