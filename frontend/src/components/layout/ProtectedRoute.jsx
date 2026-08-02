@@ -10,7 +10,7 @@ const ProtectedRoute = ({ children }) => {
   // While checking auth
   if (loading) {
     return (
-      <div className="flex h-screen items-center justify-center text-white bg-black">
+      <div className="h-10 w-10 animate-spin rounded-full border-4 border-zinc-700 border-t-blue-500">
         Loading...
       </div>
     );
@@ -18,11 +18,11 @@ const ProtectedRoute = ({ children }) => {
 
   // If not logged in
   if (!user) {
-    return <Navigate to="/register" replace />;
+    return <Navigate to="/login" replace />;
   }
 
   // If logged in
   return children;
 };
 
-export default ProtectedRoute;
+export default ProtectedRoute;//this is the protected route for the system or any app 

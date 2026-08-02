@@ -19,14 +19,14 @@ export const fetchAdminStats = asyncHandler(async (req, res) => {
  * @desc Update User Role
  * @route PATCH /api/admin/user/:id
  */
-// export const updateUserRole = asyncHandler(async (req, res) => {
-//   const { role } = req.body;
+export const updateUserRole = asyncHandler(async (req, res) => {
+  const { role } = req.body;
 
-//   if (!role) {
-//     throw new Error("Role is required");
-//   }
+  if (!role) {
+    throw new Error("Role is required");
+  }
 
-//   const user = await updateUserRoleService(req.params.id, role);
+  const user = await updateUserRoleService(req.params.id, role);
 
-//   return sendSuccess(res, "User role updated successfully", user);
-// });
+  return sendSuccess(res, "User role updated successfully", user);
+});
