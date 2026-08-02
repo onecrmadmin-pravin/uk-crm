@@ -21,3 +21,4 @@ router.post("/:cardId", rejectCard);
 // router.get("/", protect, fetchRejectedCards);
 router.get("/", fetchRejectedCards);
 export default router;
+//this is used to reject the lead

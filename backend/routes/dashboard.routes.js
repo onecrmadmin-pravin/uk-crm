@@ -10,4 +10,4 @@ const router = express.Router();
  */
 // router.get("/", protect, fetchDashboard);
 router.get("/", fetchDashboard);
-export default router;
+export default router;// this is used to fetch the dashboard stats

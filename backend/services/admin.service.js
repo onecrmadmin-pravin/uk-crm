@@ -22,25 +22,25 @@ export const getAdminStatsService = async () => {
 /**
  * @desc Update User Role
  */
-export const updateUserRoleService = async (userId, role) => {
-  if (!userId || !role) {
-    throw new Error("User ID and Role are required");
-  }
+// export const updateUserRoleService = async (userId, role) => {
+//   if (!userId || !role) {
+//     throw new Error("User ID and Role are required");
+//   }
 
-  const validRoles = ["ADMIN", "USER"];
-  if (!validRoles.includes(role)) {
-    throw new Error("Invalid role");
-  }
+//   const validRoles = ["ADMIN", "USER"];
+//   if (!validRoles.includes(role)) {
+//     throw new Error("Invalid role");
+//   }
 
-  const user = await prisma.user.update({
-    where: { id: userId },
-    data: { role },
-    select: {
-      id: true,
-      email: true,
-      role: true,
-    },
-  });
+//   const user = await prisma.user.update({
+//     where: { id: userId },
+//     data: { role },
+//     select: {
+//       id: true,
+//       email: true,
+//       role: true,
+//     },
+//   });
 
-  return user;
-};
+//   return user;
+// };

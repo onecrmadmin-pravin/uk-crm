@@ -11,4 +11,4 @@ const router = express.Router();
  */
 // router.post("/upload", protect, upload.single("file"), uploadFile);
 router.post("/upload", upload.single("file"), uploadFile);
-export default router;
+export default router;//used to upload the file 

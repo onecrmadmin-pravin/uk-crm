@@ -20,4 +20,4 @@ router.post("/", addStage);
  */
 // router.get("/", protect, fetchStages);
 router.get("/",fetchStages);
-export default router;
+export default router;//useed to add and fetch all stages

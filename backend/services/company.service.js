@@ -33,4 +33,4 @@ export const getCompaniesService = async () => {
   });
 
   return companies;
-};
+};//used too create companies

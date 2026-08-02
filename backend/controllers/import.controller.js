@@ -10,4 +10,4 @@ export const importData = asyncHandler(async (req, res) => {
   const result = await importExcelService(req.file, req.user.id);
 
   return sendSuccess(res, "Data imported successfully", result);
-});
+});// this is used to upload the data to crm all at once

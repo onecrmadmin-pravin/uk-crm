@@ -39,3 +39,4 @@ export const validateEnv = () => {
 
   console.log("✅ ENV validated successfully");
 };
+//this file check all required keys and connection are in the .env are available before app start

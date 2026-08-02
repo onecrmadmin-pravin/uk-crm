@@ -23,7 +23,7 @@ export const registerUser = serviceHandler(async ({ email, password }) => {
   const exists = await prisma.user.findUnique({ where: { email } });
   if (exists) {
     logger.warn("User already exists", { email });
-    throw new AppError("User already exists", 400);
+    throw new AppError("User already exists pls login", 400);
   }
 
   const hashed = await hashPassword(password);

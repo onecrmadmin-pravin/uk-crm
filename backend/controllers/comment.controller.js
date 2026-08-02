@@ -36,4 +36,4 @@ export const fetchComments = asyncHandler(async (req, res) => {
   const comments = await getCommentsByCardService(cardId);
 
   return sendSuccess(res, "Comments fetched successfully", comments);
-});
+});//this is used to add and fetch comments

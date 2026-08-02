@@ -20,4 +20,4 @@ router.get("/", fetchUsers);
  */
 // router.get("/:id", protect, fetchUserById);
 router.get("/:id", fetchUserById);
-export default router;
+export default router;//used to fetch users 

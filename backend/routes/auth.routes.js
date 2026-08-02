@@ -8,9 +8,9 @@ import {
   changePassword,
 } from "../controllers/auth.controller.js";
 
-import { protect } from "../middleware/auth.middleware.js";
-import { validate } from "../middleware/validate.middleware.js";
-import { authLimiter } from "../middleware/rateLimit.middleware.js";
+import { protect } from "../middleware/auth.middleware.js";//checking user coockies and verify the access token
+import { validate } from "../middleware/validate.middleware.js";//validating jooi schema using this 
+import { authLimiter } from "../middleware/rateLimit.middleware.js";//file is used to set limit using ratelimiting 
 import {
   registerSchema,
   loginSchema,

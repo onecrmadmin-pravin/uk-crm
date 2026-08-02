@@ -34,4 +34,4 @@ export const fetchRejectedCards = asyncHandler(async (req, res) => {
   const data = await getRejectedCardsService();
 
   return sendSuccess(res, "Rejected cards fetched successfully", data);
-});
+});//this is the rejected card service

@@ -10,4 +10,4 @@ const router = express.Router();
  */
 // router.get("/", protect, exportData);
 router.get("/", exportData);
-export default router;
+export default router;//used too export the data to crm

@@ -22,3 +22,5 @@ router.get("/stats", authorize("ADMIN"), fetchAdminStats);
 // router.patch("/user/:id", protect, authorize("ADMIN"), updateUserRole);
 router.patch("/user/:id", authorize("ADMIN"), updateUserRole);
 export default router;
+
+//router.get("/stats", authorize("ADMIN"), fetch)

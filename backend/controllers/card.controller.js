@@ -56,4 +56,4 @@ export const moveCard = asyncHandler(async (req, res) => {
   const card = await updateCardStageService(req.params.id, stageId);
 
   return sendSuccess(res, "Card moved successfully", card);
-});
+});//this is used for moving the card to next stage 

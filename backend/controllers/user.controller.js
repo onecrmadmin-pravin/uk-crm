@@ -27,4 +27,4 @@ export const fetchUserById = asyncHandler(async (req, res) => {
   }
 
   return sendSuccess(res, "User fetched successfully", user);
-});
+});//this is used to get all user and its admin 

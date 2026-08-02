@@ -10,4 +10,4 @@ export const fetchDashboard = asyncHandler(async (req, res) => {
   const stats = await getDashboardStatsService();
 
   return sendSuccess(res, "Dashboard data fetched successfully", stats);
-});
+}); //this is used to show dashboard data

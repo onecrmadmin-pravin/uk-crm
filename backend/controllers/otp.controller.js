@@ -36,4 +36,4 @@ export const verifyOtpController = asyncHandler(async (req, res) => {
   
 
   return sendSuccess(res, "OTP verified successfully");
-});
+});//this will help to generate and verify otp to user

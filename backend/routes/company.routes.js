@@ -20,4 +20,4 @@ router.post("/", addCompany);
  */
 // router.get("/", protect, fetchCompanies);
 router.get("/",fetchCompanies);
-export default router;
+export default router;//just used protect in order to check user is present or not 

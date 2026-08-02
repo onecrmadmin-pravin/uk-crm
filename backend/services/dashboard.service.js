@@ -25,4 +25,4 @@ export const getDashboardStatsService = async () => {
     totalComments,
     totalStages,
   };
-};
+};//used to show all filed in dashboards

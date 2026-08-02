@@ -39,4 +39,4 @@ router.get(
   authorize("USER", "ADMIN"),
   fetchComments
 );
-export default router;
+export default router;//this is defalut used to add comment in card

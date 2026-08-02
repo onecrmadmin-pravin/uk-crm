@@ -29,4 +29,4 @@ export const fetchCompanies = asyncHandler(async (req, res) => {
   const companies = await getCompaniesService();
 
   return sendSuccess(res, "Companies fetched successfully", companies);
-});
+});//need to remove this

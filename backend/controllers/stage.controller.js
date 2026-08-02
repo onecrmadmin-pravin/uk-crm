@@ -32,4 +32,4 @@ export const fetchStages = asyncHandler(async (req, res) => {
   const stages = await getStagesService();
 
   return sendSuccess(res, "Stages fetched successfully", stages);
-});
+});// this is used to add stage to sale and ops process

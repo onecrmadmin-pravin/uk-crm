@@ -55,4 +55,4 @@ router.patch(
   authorize("USER", "ADMIN"),
   moveCard
 );
-export default router;
+export default router;//this is used to route card routes

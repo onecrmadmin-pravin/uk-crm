@@ -6,9 +6,9 @@ import { logger } from "../utils/logger.js";
 export const errorHandler = (err, req, res, next) => {
   // log error
   logger.error(err.message, {
-    stack: err.stack,
-    url: req.originalUrl,
-    method: req.method,
+    stack: err.stack,//this will help to trace the error file and debugging
+    url: req.originalUrl,//api endpoint where error happend
+    method: req.method,//http method like get put ande push any
   });
 
   const statusCode = err.statusCode || 500;
@@ -17,4 +17,4 @@ export const errorHandler = (err, req, res, next) => {
     success: false,
     message: err.message || "Server Error",
   });
-};
+};// this will help to track and tracethe error

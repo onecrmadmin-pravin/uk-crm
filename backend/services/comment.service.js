@@ -62,4 +62,4 @@ export const getCommentsByCardService = serviceHandler(
 
     return comments;
   }
-);
+);//used to crete comment

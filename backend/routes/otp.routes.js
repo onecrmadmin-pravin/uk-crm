@@ -8,7 +8,7 @@ import { validate } from "../middleware/validate.middleware.js";
 import Joi from "joi";
 
 const router = express.Router();
-
+//joi has the all defined parameter that can be used to make this structure
 /**
  * Validation Schemas
  */

@@ -16,4 +16,4 @@ export const uploadFile = asyncHandler(async (req, res) => {
   return sendSuccess(res, "File uploaded successfully", {
     url: fileUrl,
   });
-});
+});// this is used to upload pdf and any other files to crm

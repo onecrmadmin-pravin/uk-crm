@@ -14,8 +14,8 @@ import { sendSuccess } from "../utils/response.js";
  * @desc Register
  */
 export const register = asyncHandler(async (req, res) => {
-  const user = await registerUser(req.body);
-
+  const user = await registerUser(req.body);//req,body get data from fronent
+ //below is the sendsuccess will return res and msg m data with res 
   return sendSuccess(res, "Registered successfully", {
     id: user.id,
     email: user.email,
@@ -50,7 +50,7 @@ export const login = asyncHandler(async (req, res) => {
  * @desc Refresh Token
  */
 export const refreshToken = asyncHandler(async (req, res) => {
-  const token = req.cookies?.refreshToken;
+  const token = req.cookies?.refreshToken;//it extract the token from brouser request for send to backend
 
   const { accessToken, refreshToken: newToken } =
     await refreshUserToken(token);
@@ -94,4 +94,4 @@ export const changePassword = asyncHandler(async (req, res) => {
   clearAuthCookies(res); // force re-login
 
   return sendSuccess(res, "Password changed successfully");
-});
+}); 

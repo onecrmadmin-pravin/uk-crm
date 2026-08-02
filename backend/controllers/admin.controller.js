@@ -1,5 +1,5 @@
-import { asyncHandler } from "../middleware/async.middleware.js";
-import { sendSuccess } from "../utils/response.js";
+import { asyncHandler } from "../middleware/async.middleware.js";//catches error automatically and send this to the error handler
+import { sendSuccess } from "../utils/response.js";//send standard responce
 import {
   getAdminStatsService,
   updateUserRoleService,
@@ -14,19 +14,19 @@ export const fetchAdminStats = asyncHandler(async (req, res) => {
 
   return sendSuccess(res, "Admin stats fetched successfully", stats);
 });
-
+//this give you the stats of the admin
 /**
  * @desc Update User Role
  * @route PATCH /api/admin/user/:id
  */
-export const updateUserRole = asyncHandler(async (req, res) => {
-  const { role } = req.body;
+// export const updateUserRole = asyncHandler(async (req, res) => {
+//   const { role } = req.body;
 
-  if (!role) {
-    throw new Error("Role is required");
-  }
+//   if (!role) {
+//     throw new Error("Role is required");
+//   }
 
-  const user = await updateUserRoleService(req.params.id, role);
+//   const user = await updateUserRoleService(req.params.id, role);
 
-  return sendSuccess(res, "User role updated successfully", user);
-});
+//   return sendSuccess(res, "User role updated successfully", user);
+// });

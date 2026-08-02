@@ -2,10 +2,12 @@
  * @desc Environment check
  */
 const isProd = process.env.NODE_ENV === "production";
-
+// ✅ setAuthCookies() → Stores JWT tokens in cookies after login.
+// ✅ clearAuthCookies() → Removes cookies during logout.
 /**
  * @desc Base cookie options
  */
+//comman string used by all the coockies is as below
 const baseOptions = {
   httpOnly: true,
   sameSite: isProd ? "none" : "lax",
