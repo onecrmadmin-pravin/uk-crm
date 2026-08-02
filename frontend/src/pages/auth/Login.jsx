@@ -205,9 +205,9 @@ const Login = () => {
             Don&apos;t have an account?{" "}
             <span
               className="text-cyan-400 cursor-pointer hover:underline"
-              onClick={() => navigate("/register")}
+              onClick={() => navigate("/verify-login")}
             >
-              Register
+              verify otp
             </span>
           </p>
           <p className="text-sm text-center text-gray-400">
